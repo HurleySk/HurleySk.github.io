@@ -1,4 +1,4 @@
-public class App {
+public class proj1 {
     public static void main(String[] args) {
         System.out.println("Horizontal Line:");
         drawHorizontalLine();
@@ -55,7 +55,7 @@ public class App {
     public static void drawCross() {
         System.out.println("*       *");
         System.out.println(" *     * ");
-        System.out.println("    *  ");
+        System.out.println("    *    ");
         System.out.println(" *     * ");
         System.out.println("*       *");
     }
