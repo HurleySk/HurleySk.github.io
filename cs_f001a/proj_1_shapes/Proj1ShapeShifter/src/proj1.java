@@ -21,6 +21,14 @@ public class proj1 {
         drawHorizontalLine();
         drawCross();
         drawHorizontalLine();
+
+        //Created by Aundria VanderVeur - Complex Shape: Castle Tower
+        System.out.println("Castle Tower");
+        drawUpTriangle();      
+        drawSquare();          
+        drawSquare();          
+        drawSquare();          
+        drawHorizontalLine();
     }
     public static void drawHorizontalLine() {
         System.out.println("*********");
