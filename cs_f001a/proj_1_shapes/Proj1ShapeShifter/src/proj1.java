@@ -1,22 +1,39 @@
 public class proj1 {
     public static void main(String[] args) {
+        //Horizontal Line
         System.out.println("Horizontal Line:");
         drawHorizontalLine();
+
+        //Vertical Line
         System.out.println("Vertical Line:");
         drawVerticalLine();
+
+        //Rectangle
         System.out.println("Rectangle:");
         drawRectangle();
+
+        //Square
         System.out.println("Square:");
         drawSquare();
+
+        //Up Triangle
         System.out.println("Up Triangle:");
         drawUpTriangle();
+
+        //Down Triangle
         System.out.println("Down Triangle:");
         drawDownTriangle();
+
+        //My custom shape: Cross
         System.out.println("Cross:");
         drawCross();
+
+        //Complex shape: House
         System.out.println("House:");
         drawUpTriangle();
         drawRectangle();
+
+        // My complex shape: Hourglass
         System.out.println("Hourglass:");
         drawHorizontalLine();
         drawCross();
