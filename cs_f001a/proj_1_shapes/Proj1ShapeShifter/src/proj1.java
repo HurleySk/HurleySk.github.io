@@ -22,21 +22,30 @@ public class proj1 {
         drawCross();
         drawHorizontalLine();
 
-        //Created by Aundria VanderVeur - Complex Shape: Castle Tower
-        System.out.println("Castle Tower");
-        drawUpTriangle();      
-        drawSquare();          
-        drawSquare();          
-        drawSquare();          
+        //Created by Bailey Palmaffy - Complex Shape: Crystal
+        System.out.println("Crystal");
+        drawUpTriangle();
         drawHorizontalLine();
+        drawRectangle();
+        drawRectangle();
+        drawHorizontalLine();
+        drawDownTriangle();
+
+        /*Created by Katherine Castillo - Complex Shape: Double-Sided Arrow 
+        NOTE: I modified the method names to match my capitlization.*/
+        System.out.println("double sided arrow");//arguement
+        drawUpTriangle();      
+        drawVerticalLine();          
+        drawDownTriangle();          
+
     }
     public static void drawHorizontalLine() {
         System.out.println("*********");
     }
     public static void drawVerticalLine() {
-        System.out.println("*");
-        System.out.println("*");
-        System.out.println("*");
+        System.out.println("    *    ");
+        System.out.println("    *    ");
+        System.out.println("    *    ");
     }
     public static void drawRectangle() {
         drawHorizontalLine();
