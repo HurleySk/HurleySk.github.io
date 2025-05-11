@@ -9,6 +9,12 @@ public class LoopyArrays {
         //Call getAverage with values
         System.out.println("The average of these values is: " + String.valueOf(getAverage(values)));
 
+        //Declare squarePrinter variables
+        int[] numbers = {2, 4, 6, 8, 10};
+
+        //Call squarePrinter
+        squarePrinter(numbers);
+
     }
 
     public static double getAverage(double[] values) {
@@ -23,5 +29,12 @@ public class LoopyArrays {
 
         //Return average
         return sum / count;
+    }
+
+    public static void squarePrinter(int[] numbers) {
+        System.out.println("Squaring numbers using a for loop:");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i] + " squared is " + (numbers[i] * numbers[i]));
+        }
     }
 }
