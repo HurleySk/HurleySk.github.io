@@ -15,6 +15,12 @@ public class LoopyArrays {
         //Call squarePrinter
         squarePrinter(numbers);
 
+        int[] bigBalls = {1, 2, 3};
+        bigBalls[0] = 500;
+        for (int ball : bigBalls) {
+            System.out.println(ball);
+        }
+
     }
 
     public static double getAverage(double[] values) {
