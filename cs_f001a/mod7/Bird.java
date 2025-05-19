@@ -12,10 +12,18 @@ public class Bird {
     private static List<Integer> idsInUse = new ArrayList<>();
     private static int nextId = 1;
 
+    //Declare list of valid bird types for validation
+    private static List<String> validTypes = List.of("Cardinal", "Bluejay", "Owl", "Hawk", "Robin", "Eagle", "Dove");
+
     //Constructor
     public Bird(String type) {
         //Set type to type passed in constructor
-        this.type = type;
+        if (validTypes.contains(type)) {
+            this.type = type;
+        } else {
+            throw new IllegalArgumentException("Please enter a valid bird type");
+        }
+        
         
         //Identify if nextId already in use to account for potential user-set IDs and increment up to next largest integer
         while(idsInUse.contains(nextId)) {
@@ -54,7 +62,11 @@ public class Bird {
 
     //Setter for type
     public String setType(String newType) {
-        this.type = newType;
+        if (validTypes.contains(newType)) {
+            this.type = newType;
+        } else {
+            throw new IllegalArgumentException("Please enter a valid bird type");
+        }
         return this.type;
     }
 
