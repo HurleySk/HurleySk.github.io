@@ -69,5 +69,4 @@ public class Bird {
         }
         return this.type;
     }
-
 }
