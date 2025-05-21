@@ -7,5 +7,12 @@ public class Main {
         System.out.println(firstBook.getId());
         firstBook.setTitle("Anna Karenina");
         System.out.println(firstBook.getTitle());
+
+        Task task = new Task();
+        task.setDescription("Fold laundry");
+        task.setPriority(2);
+        System.out.println(task.getID());
+        System.out.println(task.getDescription());
+        System.out.println(task.getPriority());
     }
 }
